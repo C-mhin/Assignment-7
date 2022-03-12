@@ -25,9 +25,9 @@ function generate(minLen = 50, maxLen = 200) {
 
     // end if we find a '.', '?' or '!', and have passed minLen
     if (
-      (result.length >= minLen && result.endsWith(".")) ||
-      result.endsWith("!") ||
-      result.endsWith("?")
+      (result.length >= minLen && (result.endsWith(".")) ||
+        result.endsWith("!") ||
+        result.endsWith("?"))
     )
       break;
   }
