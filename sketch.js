@@ -38,25 +38,11 @@ function generate(minLen = 50, maxLen = 200) {
 }
 
 function loadMarkovModel() {
+
   let text = song1Data.lyrics.join(" ");
-
-  for (let i = 0; i < text.length; i++) {
-    let key = text.substring(i, i + (N - 1));
-    let next = text[i + (N - 1)];
-    if (!model[key]) model[key] = [];
-    model[key].push(next);
-  }
-
-  text = song2Data.lyrics.join(" ");
-
-  for (let i = 0; i < text.length; i++) {
-    let key = text.substring(i, i + (N - 1));
-    let next = text[i + (N - 1)];
-    if (!model[key]) model[key] = [];
-    model[key].push(next);
-  }
-
-  text = song3Data.lyrics.join(" ");
+  text += song2Data.lyrics.join(" ");
+  text += song3Data.lyrics.join(" ");
+  
   for (let i = 0; i < text.length; i++) {
     let key = text.substring(i, i + (N - 1));
     let next = text[i + (N - 1)];
