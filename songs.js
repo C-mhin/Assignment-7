@@ -116,7 +116,7 @@ let song3Data = {
   lyrics: [
     "Yo, Big Shaq, the one and only.",
     "Man's not hot, never hot.",
-    "Skrrat (GottiOnEm), skidi-kat-kat.",
+    "Skrrat, skidi-kat-kat.",
     "Boom!",
     "Two plus two is four.",
     "Minus one that's three, quick maths.",
