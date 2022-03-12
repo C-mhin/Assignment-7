@@ -43,7 +43,7 @@ function loadMarkovModel() {
   text += song2Data.lyrics.join(" ");
   text += song3Data.lyrics.join(" ");
   console.log(text);
-  for (let i = 0; i < text.length-N; i++) {
+  for (let i = 0; i < text.length - N - 1; i++) {
     let key = text.substring(i, i + (N - 1));
     let next = text[i + (N - 1)];
     if (!model[key]) model[key] = [];
