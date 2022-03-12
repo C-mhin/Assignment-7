@@ -39,16 +39,18 @@ function generate(minLen = 50, maxLen = 200) {
 
 function loadMarkovModel() {
 
+  // combine three songs together
   let text = song1Data.lyrics.join(" ");
   text += song2Data.lyrics.join(" ");
   text += song3Data.lyrics.join(" ");
-  console.log(text);
+
+  //console.log(text);
+  // make keys according to the size of N
   for (let i = 0; i < text.length - N - 1; i++) {
     let key = text.substring(i, i + (N - 1));
     let next = text[i + (N - 1)];
     if (!model[key]) model[key] = [];
     model[key].push(next);
   }
-
-  console.log(model);
+  //console.log(model);
 }

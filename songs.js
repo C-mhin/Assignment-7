@@ -1,3 +1,6 @@
+// songs used here are not owned by me 
+// lyrics are modified to fit the purpose of the sketch
+
 let song1Data = {
   title: "Never Gonna Give You Up",
   singer: "Rick Astly",
@@ -167,7 +170,7 @@ let song3Data = {
     "Ah, yo, boom, ah.",
     "The ting goes skrrrahh.",
     "Pap, pap, ka-ka-ka.",
-    "Skidiki pap pap.",
+    "Skidiki pap-pap.",
     "And a pu-pu-pudrrrr-boom.",
     "Skya.",
     "Du-du-ku-ku-dun-dun.",
@@ -190,7 +193,7 @@ let song3Data = {
     "But either way, A-B-C-D.",
     "The ting goes skrrrahh.",
     "Pap, pap, ka-ka-ka.",
-    "Skidiki pap pap.",
+    "Skidiki pap-pap.",
     "And a pu-pu-pudrrrr-boom.",
     "Skya.",
     "Du-du-ku-ku-dun-dun.",
@@ -202,6 +205,6 @@ let song3Data = {
     "40 degrees and man's not hot.",
     "Yo, in the sauna.",
     "Man's not hot.",
-    "Yeah, skidika pap pap.",
+    "Yeah, skidika pap-pap.",
   ],
 };
