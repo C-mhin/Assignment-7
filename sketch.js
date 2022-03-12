@@ -23,7 +23,7 @@ function generate(minLen = 50, maxLen = 200) {
     let next = random(options);
     result += next; // add it to our string
 
-    // end if we find a '.' and have passed minLen
+    // end if we find a '.', '?' or '!', and have passed minLen
     if (
       (result.length >= minLen && result.endsWith(".")) ||
       result.endsWith("!") ||
