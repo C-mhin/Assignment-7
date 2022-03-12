@@ -2,6 +2,14 @@ html, body {
   margin: 0;
   padding: 0;
 }
-canvas {
-  display: block;
+body {
+  background: #1a1a1a;
+}
+div {
+  margin: 20px;
+  width: 600px;
+}
+span {
+  color: #b10099;
+  font-size: 20px;
 }
