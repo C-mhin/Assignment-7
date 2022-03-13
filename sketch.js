@@ -5,6 +5,9 @@ function setup() {
   noCanvas(); // use DOM instead
   loadMarkovModel();
   generate();
+
+  let span = document.getElementById("instruction");
+  span.innerText = `Adjust "N" Here (Max - 12, Min - 6): ${N}`;
 }
 
 function adjust(input) {
@@ -21,8 +24,9 @@ function adjust(input) {
       N--;
     }
   }
-  let span = document.getElementById("N");
-  span.innerText = N;
+  
+  let span = document.getElementById("instruction");
+  span.innerText = `Adjust "N" Here (Max - 12, Min - 6): ${N}`;
 
   span = document.getElementById("content");
   span.innerText = "";
