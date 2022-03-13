@@ -62,10 +62,11 @@ function generate(minLen = 50, maxLen = 200) {
 
 function loadMarkovModel() {
   model = {};
-  // combine three songs together
+  // combine all songs together
   let text = song1Data.lyrics.join(" ");
   text += song2Data.lyrics.join(" ");
   text += song3Data.lyrics.join(" ");
+  text += song4Data.lyrics.join(" ");
 
   //console.log(text);
   // make keys according to the size of N
