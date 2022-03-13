@@ -24,7 +24,7 @@ function adjust(input) {
       N--;
     }
   }
-  
+
   let span = document.getElementById("instruction");
   span.innerText = `Adjust "N" Here (Max - 12, Min - 6): ${N}`;
 
@@ -61,7 +61,7 @@ function generate(minLen = 50, maxLen = 200) {
 }
 
 function loadMarkovModel() {
-
+  model = {};
   // combine three songs together
   let text = song1Data.lyrics.join(" ");
   text += song2Data.lyrics.join(" ");
