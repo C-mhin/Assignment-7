@@ -7,6 +7,29 @@ function setup() {
   generate();
 }
 
+function adjust(input) {
+  if (input) {
+    if (N >= 12) {
+      N = 6;
+    } else {
+      N++;
+    }
+  } else {
+    if (N <= 6) {
+      N = 12;
+    } else {
+      N--;
+    }
+  }
+  let span = document.getElementById("N");
+  span.innerText = N;
+
+  span = document.getElementById("content");
+  span.innerText = "";
+  loadMarkovModel();
+  generate();
+}
+
 function generate(minLen = 50, maxLen = 200) {
   // pick a random capital as start
   let result = random(Object.keys(model).filter((k) => /^[A-Z]/.test(k)));
