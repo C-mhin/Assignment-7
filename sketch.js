@@ -7,18 +7,18 @@ function setup() {
   generate();
 
   let span = document.getElementById("instruction");
-  span.innerText = `Adjust "N" Here (Max - 12, Min - 6): ${N}`;
+  span.innerText = `Adjust "N" Here (Max - 12, Min - 3): ${N}`;
 }
 
 function adjust(input) {
   if (input) {
     if (N >= 12) {
-      N = 6;
+      N = 3;
     } else {
       N++;
     }
   } else {
-    if (N <= 6) {
+    if (N <= 3) {
       N = 12;
     } else {
       N--;
@@ -26,7 +26,7 @@ function adjust(input) {
   }
 
   let span = document.getElementById("instruction");
-  span.innerText = `Adjust "N" Here (Max - 12, Min - 6): ${N}`;
+  span.innerText = `Adjust "N" Here (Max - 12, Min - 3): ${N}`;
 
   span = document.getElementById("content");
   span.innerText = "";
